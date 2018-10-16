@@ -19,5 +19,7 @@ for filename in glob.glob("**/*.xml"):
     if not validate(filename, xmlschema):
         print("%s failed %s" % (filename, xmlschema.error_log))
         sys.exit(1)
+    else:
+        print("%s passed" % (filename,))
 
 sys.exit(0)
