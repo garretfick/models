@@ -3,15 +3,15 @@
   <model id="112" len="60" name="inverter">
     <block len="60">
       <point id="A" offset="0" type="float32" units="A" mandatory="true" />
-      <point id="AphA" offset="2" type="float32" units="A" mandatory="true" />
-      <point id="AphB" offset="4" type="float32" units="A" mandatory="true" />
-      <point id="AphC" offset="6" type="float32" units="A" />
-      <point id="PPVphAB" offset="8" type="float32" units="V" />
-      <point id="PPVphBC" offset="10" type="float32" units="V" />
-      <point id="PPVphCA" offset="12" type="float32" units="V" />
-      <point id="PhVphA" offset="14" type="float32" units="V" mandatory="true" />
-      <point id="PhVphB" offset="16" type="float32" units="V" mandatory="true" />
-      <point id="PhVphC" offset="18" type="float32" units="V" />
+      <point id="AphA" offset="2" type="float32" units="A" mandatory="true" phaseGroup="Aph" phase="A" />
+      <point id="AphB" offset="4" type="float32" units="A" mandatory="true" phaseGroup="Aph" phase="B" />
+      <point id="AphC" offset="6" type="float32" units="A" phaseGroup="Aph" phase="C" />
+      <point id="PPVphAB" offset="8" type="float32" units="V" phaseGroup="PPVph" phase="AB" />
+      <point id="PPVphBC" offset="10" type="float32" units="V" phaseGroup="PPVph" phase="BC" />
+      <point id="PPVphCA" offset="12" type="float32" units="V" phaseGroup="PPVph" phase="CA" />
+      <point id="PhVphA" offset="14" type="float32" units="V" mandatory="true" phaseGroup="PhVph" phase="A" />
+      <point id="PhVphB" offset="16" type="float32" units="V" mandatory="true" phaseGroup="PhVph" phase="B" />
+      <point id="PhVphC" offset="18" type="float32" units="V" phaseGroup="PhVph" phase="C" />
       <point id="W" offset="20" type="float32" units="W" mandatory="true" />
       <point id="Hz" offset="22" type="float32" units="Hz" mandatory="true" />
       <point id="VA" offset="24" type="float32" units="VA" />

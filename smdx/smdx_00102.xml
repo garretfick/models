@@ -7,12 +7,12 @@
       <point id="AphB" offset="2" type="uint16" sf="A_SF" units="A" mandatory="true" />
       <point id="AphC" offset="3" type="uint16" sf="A_SF" units="A" />
       <point id="A_SF" offset="4" type="sunssf" mandatory="true" />
-      <point id="PPVphAB" offset="5" type="uint16" sf="V_SF" units="V" />
-      <point id="PPVphBC" offset="6" type="uint16" sf="V_SF" units="V" />
-      <point id="PPVphCA" offset="7" type="uint16" sf="V_SF" units="V" />
-      <point id="PhVphA" offset="8" type="uint16" sf="V_SF" units="V" mandatory="true" />
-      <point id="PhVphB" offset="9" type="uint16" sf="V_SF" units="V" mandatory="true" />
-      <point id="PhVphC" offset="10" type="uint16" sf="V_SF" units="V" />
+      <point id="PPVphAB" offset="5" type="uint16" sf="V_SF" units="V" phaseGroup="PPVph" phase="AB"/>
+      <point id="PPVphBC" offset="6" type="uint16" sf="V_SF" units="V" phaseGroup="PPVph" phase="BC" />
+      <point id="PPVphCA" offset="7" type="uint16" sf="V_SF" units="V" phaseGroup="PPVph" phase="CA" />
+      <point id="PhVphA" offset="8" type="uint16" sf="V_SF" units="V" mandatory="true" phaseGroup="PhVph" phase="A" />
+      <point id="PhVphB" offset="9" type="uint16" sf="V_SF" units="V" mandatory="true" phaseGroup="PhVph" phase="B" />
+      <point id="PhVphC" offset="10" type="uint16" sf="V_SF" units="V" phaseGroup="PhVph" phase="C" />
       <point id="V_SF" offset="11" type="sunssf" mandatory="true" />
       <point id="W" offset="12" type="int16" sf="W_SF" units="W" mandatory="true" />
       <point id="W_SF" offset="13" type="sunssf" mandatory="true" />

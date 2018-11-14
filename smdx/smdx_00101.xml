@@ -3,29 +3,29 @@
   <!-- 101: inverter -->
   <model id="101" len="50" name="inverter">
     <block len="50">
-      <point id="A" offset="0" type="uint16" sf="A_SF" units="A" mandatory="true" />
+      <point id="A" offset="0" type="uint16" sf="A_SF" units="A" mandatory="true"/>
       <point id="AphA" offset="1" type="uint16" sf="A_SF" units="A" mandatory="true" />
       <point id="AphB" offset="2" type="uint16" sf="A_SF" units="A" />
       <point id="AphC" offset="3" type="uint16" sf="A_SF" units="A" />
       <point id="A_SF" offset="4" type="sunssf" mandatory="true" />
-      <point id="PPVphAB" offset="5" type="uint16" sf="V_SF" units="V" />
-      <point id="PPVphBC" offset="6" type="uint16" sf="V_SF" units="V" />
-      <point id="PPVphCA" offset="7" type="uint16" sf="V_SF" units="V" />
-      <point id="PhVphA" offset="8" type="uint16" sf="V_SF" units="V" mandatory="true" />
-      <point id="PhVphB" offset="9" type="uint16" sf="V_SF" units="V" />
-      <point id="PhVphC" offset="10" type="uint16" sf="V_SF" units="V" />
+      <point id="PPVphAB" offset="5" type="uint16" sf="V_SF" units="V" phaseGroup="PPVph" phase="AB"/>
+      <point id="PPVphBC" offset="6" type="uint16" sf="V_SF" units="V" phaseGroup="PPVph" phase="BC"/>
+      <point id="PPVphCA" offset="7" type="uint16" sf="V_SF" units="V" phaseGroup="PPVph" phase="CA"/>
+      <point id="PhVphA" offset="8" type="uint16" sf="V_SF" units="V" mandatory="true" phaseGroup="PhVph" phase="A" />
+      <point id="PhVphB" offset="9" type="uint16" sf="V_SF" units="V"  phaseGroup="PhVph" phase="B"/>
+      <point id="PhVphC" offset="10" type="uint16" sf="V_SF" units="V" phaseGroup="PhVph" phase="C"/>
       <point id="V_SF" offset="11" type="sunssf" mandatory="true" />
-      <point id="W" offset="12" type="int16" sf="W_SF" units="W" mandatory="true" />
+      <point id="W" offset="12" type="int16" sf="W_SF" units="W" mandatory="true"/>
       <point id="W_SF" offset="13" type="sunssf" mandatory="true" />
       <point id="Hz" offset="14" type="uint16" sf="Hz_SF" units="Hz" mandatory="true" />
       <point id="Hz_SF" offset="15" type="sunssf" mandatory="true" />
-      <point id="VA" offset="16" type="int16" sf="VA_SF" units="VA" />
+      <point id="VA" offset="16" type="int16" sf="VA_SF" units="VA"/>
       <point id="VA_SF" offset="17" type="sunssf" />
-      <point id="VAr" offset="18" type="int16" sf="VAr_SF" units="var" />
+      <point id="VAr" offset="18" type="int16" sf="VAr_SF" units="var"/>
       <point id="VAr_SF" offset="19" type="sunssf" />
-      <point id="PF" offset="20" type="int16" sf="PF_SF" units="Pct" />
+      <point id="PF" offset="20" type="int16" sf="PF_SF" units="Pct"/>
       <point id="PF_SF" offset="21" type="sunssf" />
-      <point id="WH" offset="22" type="acc32" sf="WH_SF" units="Wh" mandatory="true" />
+      <point id="WH" offset="22" type="acc32" sf="WH_SF" units="Wh" mandatory="true"/>
       <point id="WH_SF" offset="24" type="sunssf" mandatory="true" />
       <point id="DCA" offset="25" type="uint16" sf="DCA_SF" units="A" />
       <point id="DCA_SF" offset="26" type="sunssf" />
